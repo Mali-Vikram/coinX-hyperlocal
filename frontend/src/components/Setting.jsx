@@ -1,16 +1,16 @@
-import React from "react"
+import "../styles/Setting.css"
 
 const Settings = () => {
 	return (
-		<div className="bg-white rounded-lg p-4 shadow-lg">
-			<h3 className="text-lg font-semibold mb-4">Settings</h3>
-			<div className="space-y-2">
-				<button className="bg-blue-500 text-white py-2 px-4 rounded w-full">
-					Settings Option 1
+		<div className="neumorphic-bg rounded-lg p-6 shadow-neumorphism">
+			<h3 className="text-xl font-semibold mb-6 neumorphic-text">Settings</h3>
+			<div className="space-y-4">
+				<button className="neumorphic-button w-full">Account Settings</button>
+				<button className="neumorphic-button w-full">
+					Notification Preferences
 				</button>
-				<button className="bg-blue-500 text-white py-2 px-4 rounded w-full">
-					Settings Option 2
-				</button>
+				<button className="neumorphic-button w-full">Data Privacy</button>
+				<button className="neumorphic-button w-full">Reset to Defaults</button>
 			</div>
 		</div>
 	)

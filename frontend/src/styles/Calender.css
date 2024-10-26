@@ -1,0 +1,39 @@
+/* Neumorphic container background */
+.neumorphic-bg {
+  background-color: #e0e5ec;
+  box-shadow: 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Select dropdown styling */
+.neumorphic-select select {
+  background-color: #e0e5ec;
+  box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+  color: #3b3e47;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Hover effect on dropdown */
+.neumorphic-select select:hover {
+  box-shadow: 4px 4px 8px #a3b1c6, -4px -4px 8px #ffffff;
+}
+
+/* Grid item (days) styling */
+.neumorphic-day-grid div {
+  background-color: #e0e5ec;
+  box-shadow: 4px 4px 8px #a3b1c6, -4px -4px 8px #ffffff;
+  color: #3b3e47;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Selected day styling */
+.shadow-neumorphic-selected {
+  box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+}

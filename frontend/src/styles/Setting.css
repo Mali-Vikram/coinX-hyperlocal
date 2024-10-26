@@ -1,0 +1,58 @@
+/* Setting.css */
+:root {
+  --neumorphic-bg-color: #e0e5ec;
+  --neumorphic-shadow-light: rgba(255, 255, 255, 0.8);
+  --neumorphic-shadow-dark: rgba(0, 0, 0, 0.2);
+  --button-bg-color: #f0f5fa;
+  --button-text-color: #333;
+  --hover-bg-color: #d1e0f5;
+}
+
+.neumorphic-bg {
+  background-color: var(--neumorphic-bg-color);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 8px 8px 16px var(--neumorphic-shadow-dark),
+    -8px -8px 16px var(--neumorphic-shadow-light);
+  transition: box-shadow 0.3s ease;
+}
+
+.neumorphic-text {
+  color: #4b4b4b;
+}
+
+.neumorphic-button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px var(--neumorphic-shadow-dark),
+    -6px -6px 12px var(--neumorphic-shadow-light);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.neumorphic-button:hover {
+  background-color: var(--hover-bg-color);
+  box-shadow: 4px 4px 8px var(--neumorphic-shadow-dark),
+    -4px -4px 8px var(--neumorphic-shadow-light);
+}
+
+.neumorphic-button:active {
+  box-shadow: inset 4px 4px 8px var(--neumorphic-shadow-dark),
+    inset -4px -4px 8px var(--neumorphic-shadow-light);
+}
+
+@media (max-width: 768px) {
+  .neumorphic-bg {
+    padding: 16px;
+  }
+
+  .neumorphic-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
