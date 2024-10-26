@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .shadow-neumorphic-light {
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+  }
+
+  .shadow-neumorphic-selected {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.6);
+  }
+
+  .bg-cream-100 {
+    background-color: #FFF7F0;
+  }
+
+  .text-pink-500 {
+    color: #FF6F91;
+  }
+
+  .text-pink-600 {
+    color: #FF5776;
+  }
+
+  .bg-pink-500 {
+    background-color: #FF6F91;
+  }
+
+  .bg-pink-600 {
+    background-color: #FF5776;
+  }
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+}
+
+.animate-rise {
+  animation: rise 0.5s ease-out;
+}

@@ -1,0 +1,28 @@
+/* Neumorphic container background */
+.shadow-neumorphism {
+  background-color: #e0e5ec;
+  box-shadow: 8px 8px 16px #a3b1c6, -8px -8px 16px #ffffff;
+  border-radius: 20px;
+}
+
+/* Selected shadow effect */
+.shadow-neumorphic-selected {
+  box-shadow: inset 6px 6px 10px #a3b1c6, inset -6px -6px 10px #ffffff;
+}
+
+/* Text styling for neumorphic effect */
+.neumorphic-text {
+  color: #4b4f56;
+  font-weight: 500;
+}
+
+/* Call-to-action button styling */
+a {
+  background-color: #6d4f92;
+  border-radius: 24px;
+  padding: 12px 24px;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 4px 4px 8px #a3b1c6, -4px -4px 8px #ffffff;
+  transition: all 0.3s ease;
+}

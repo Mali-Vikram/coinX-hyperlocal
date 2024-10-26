@@ -1,0 +1,65 @@
+/* ParameterPredection.css */
+:root {
+  --bg-color: #e0e5ec;
+  --shadow-light: rgba(255, 255, 255, 0.8);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+  --checkbox-bg: #f0f5fa;
+  --text-color: #333;
+  --hover-color: #d1e0f5;
+}
+
+.neumorphic-bg {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+  transition: box-shadow 0.3s ease;
+}
+
+.neumorphic-text {
+  color: var(--text-color);
+}
+
+.neumorphic-item {
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s ease;
+}
+
+.neumorphic-item:hover {
+  background-color: var(--hover-color);
+  box-shadow: 4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
+}
+
+.neumorphic-checkbox {
+  width: 24px;
+  height: 24px;
+  background-color: var(--checkbox-bg);
+  border-radius: 4px;
+  box-shadow: inset 2px 2px 5px var(--shadow-dark), inset -2px -2px 5px var(--shadow-light);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.neumorphic-checkbox:checked {
+  background-color: #5a9bd5;
+}
+
+.neumorphic-checkbox:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .neumorphic-bg {
+    padding: 16px;
+  }
+
+  .neumorphic-item {
+    padding: 12px;
+  }
+
+  .neumorphic-checkbox {
+    transform: scale(1.1);
+  }
+}

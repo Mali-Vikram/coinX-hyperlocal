@@ -1,9 +1,9 @@
 import Header from "./Header"
-import SessionSelector from "./SessionSelectors"
+import SessionSelector from "./PredctionParamertes"
 import Calendar from "./Calender"
 import Analytics from "./Aanltics"
 import Settings from "./Setting"
-import MonthSelector from "./MonthSelector"
+import MonthSelector from "./ConsumerDemandPrediction"
 
 const Dashboard = () => {
 	return (
